@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: shipping-service
+server:
+  port: 0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://192.168.1.26:9091/eureka}
+  instance:
+    preferIpAddress: true

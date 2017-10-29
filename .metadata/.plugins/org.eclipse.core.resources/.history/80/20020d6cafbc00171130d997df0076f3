@@ -1,0 +1,9 @@
+package composite.order;
+
+public class OrderCompositeServiceApplication {
+
+	public OrderCompositeServiceApplication() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

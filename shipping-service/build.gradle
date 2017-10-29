@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.5.8.RELEASE'
+		springBootVersion = '1.5.2.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -24,10 +24,12 @@ targetCompatibility = 1.7
 
 repositories {
     mavenCentral()
-    maven {
-    	// Can't find spring-cloud-build in maven central...
-	    url 'http://maven.springframework.org/release'
-    }
+}
+
+dependencyManagement {
+	imports {
+		mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Dalston.SR1'
+	}
 }
 
 dependencies {
@@ -36,10 +38,8 @@ dependencies {
     }
     compile("org.springframework.boot:spring-boot-starter-undertow:${springBootVersion}")
     compile("org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}")
-    compile("org.springframework.cloud:spring-cloud-starter-hystrix:2.0.0.M2.RELEASE")
-    compile("org.springframework.cloud:spring-cloud-starter-eureka:2.0.0.M2.RELEASE")
-    compile("org.springframework.cloud:spring-cloud-starter-bus-amqp:1.0.0.RELEASE")
-    compile("org.springframework.cloud:spring-cloud-netflix-hystrix-amqp:1.0.0.RELEASE")
+    compile("org.springframework.cloud:spring-cloud-starter-hystrix")
+    compile("org.springframework.cloud:spring-cloud-starter-eureka")
     testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
 }
 
