@@ -1,16 +1,11 @@
 spring:
   application:
-    name: order-composite-service
-  logging:
-    level:
-      composite.order: DEBUG	
+    name: shipping-service
 server:
   port: 0
-  
 eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:9091/eureka}
-    leaseRenewalIntervalInSeconds: 10
   instance:
     preferIpAddress: true

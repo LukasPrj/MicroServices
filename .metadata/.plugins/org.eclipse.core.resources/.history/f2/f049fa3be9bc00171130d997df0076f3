@@ -1,15 +1,14 @@
 spring:
   application:
     name: warehouse-service
-    
 server:
   port: 0
-  
 eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:9091/eureka}
+    leaseRenewalIntervalInSeconds: 10
   instance:
     preferIpAddress: true
-    leaseRenewalIntervalInSeconds: 10
-    instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
