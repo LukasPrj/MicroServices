@@ -1,0 +1,23 @@
+package composite.order.model;
+
+import java.util.Date;
+
+public class Shipment {
+	
+	private long orderId;
+	private Date shipmentDate;
+	
+	public Shipment(long orderId) {
+		this.orderId = orderId;
+		this.shipmentDate = new Date();
+	}
+	
+	public long getOrderId () {
+		return this.orderId;
+	}
+	
+	public Date getShippingDate() {
+		return this.shipmentDate;
+	}
+
+}

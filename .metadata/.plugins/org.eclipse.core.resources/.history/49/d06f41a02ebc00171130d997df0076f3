@@ -1,0 +1,43 @@
+package composite.order.model;
+
+import java.util.*;
+
+public class Order {
+	
+	private Item item;
+	private long orderId;
+	private Customer customer;
+	private String billingAddress;
+	private String shippingAddress;
+	
+	public Order(long orderId, Item item, Customer customer, String billingAddress, String shippingAddress) {
+		this.orderId = orderId;
+		this.item = item;
+		this.customer = customer;
+		this.billingAddress = billingAddress;
+		this.shippingAddress = shippingAddress;		
+	}
+	
+	public Long getOrderId()
+	{
+		return this.orderId;
+	}
+	
+	public Customer getOrderCustomer() {
+		return this.customer;
+	}
+	
+	public String getBillingAddress() {
+		return this.billingAddress;
+	}
+	
+	public String getShippingAddress() {
+		return this.shippingAddress;
+	}
+	
+	@Override
+	public String toString() {
+		return "Order: " + this.getOrderId() + " for customer " + this.getOrderCustomer().getFirstName() 
+				+ " is to be delivered at " + this.getShippingAddress()
+	}
+}

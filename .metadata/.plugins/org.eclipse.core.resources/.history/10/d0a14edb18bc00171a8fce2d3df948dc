@@ -1,0 +1,33 @@
+buildscript {
+	ext {
+		springBootVersion = 1.5.8.RELEASE
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+    	classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+apply plugin: 'maven-publish'
+
+jar {
+    baseName = 'product-service'
+    version = '0.0.1-SNAPSHOT'
+}
+
+repositories {
+    mavenCentral()
+        maven {
+        // Can't find spring-cloud-build in maven central...
+        url 'http://maven.springframework.org/release'
+    }
+}
+
+
+

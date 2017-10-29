@@ -1,0 +1,5 @@
+package composite.order.model;
+
+public class OrderAggregated {
+
+}

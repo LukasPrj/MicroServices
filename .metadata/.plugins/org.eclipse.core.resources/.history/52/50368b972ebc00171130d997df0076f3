@@ -1,0 +1,13 @@
+package core.shipment.service;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ShipmentService {
+	@RequestMapping("/ship/{orderId}")
+	public Shipment shipOrder(@Pathvariable long orderId) {
+		return new Shipment (orderId);
+	}
+	
+}

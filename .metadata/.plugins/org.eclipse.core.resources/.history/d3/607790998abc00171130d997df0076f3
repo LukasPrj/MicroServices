@@ -1,0 +1,11 @@
+package support.discovery;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
+@EnableE
+@SpringBootApplication
+@EnableDiscoveryClient
+public class EurekaApplication {
+
+}

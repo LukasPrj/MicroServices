@@ -1,0 +1,5 @@
+package core.shipment;
+
+public class ShipmentServiceApplication {
+
+}

@@ -1,0 +1,25 @@
+INDEX VERSION 1.126+C:\Users\lukas.casier\Documents\Accenture\05 - Lightweight Architecture\00 - Playground\Microservices\.metadata\.plugins\org.eclipse.jdt.core
+2580642217.index
+4034104944.index
+3792459189.index
+187082237.index
+1533268098.index
+2804569985.index
+1343705872.index
+1240775345.index
+2847076510.index
+3559652157.index
+160682980.index
+2010163384.index
+1214810339.index
+2414652618.index
+2082457370.index
+4275752481.index
+1913524114.index
+117137647.index
+1116802770.index
+2650409595.index
+2693705527.index
+2681328210.index
+2247788258.index
+1126251939.index
