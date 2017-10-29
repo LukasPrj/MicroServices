@@ -4,7 +4,11 @@ public class Customer {
 	
 	private String firstName;
 	private String lastName;
-
+	
+	public Customer() {
+		super();
+	}
+	
 	public Customer(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -14,7 +18,15 @@ public class Customer {
 		return this.firstName;
 	}
 	
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;		
+	}
+	
 	public String getLastName () {
 		return this.lastName;
+	}
+	
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 }

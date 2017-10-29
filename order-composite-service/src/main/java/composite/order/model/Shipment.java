@@ -9,6 +9,10 @@ public class Shipment {
 	private Date shipmentDate;
 	private String shippingAddress;
 	
+	public Shipment() {
+		super();
+	}
+	
 	public Shipment(long shipmentId, long orderId, String shippingAddress) {
 		this.shipmentId = shipmentId;
 		this.orderId = orderId;
@@ -20,14 +24,25 @@ public class Shipment {
 		return this.orderId;
 	}
 	
+	public void setOrderId (long orderId) {
+		this.orderId = orderId;
+	}
+	
 	public long getShipmentId() {
 		return this.shipmentId;
+	}
+	
+	public void setShipmentId(long shipmentId) {
+		this.shipmentId = shipmentId;
 	}
 	
 	public Date getShippingDate() {
 		return this.shipmentDate;
 	}
 	
+	public void setShippingDate(Date shippingDate) {
+		this.shipmentDate = shippingDate;
+	}
 	public String getShippingAddress() {
 		return this.shippingAddress;
 	}

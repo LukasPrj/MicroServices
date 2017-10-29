@@ -6,6 +6,10 @@ public class OrderAggregated {
 	private Shipment shipment;
 	// private BillStatement bill;
 	
+	public OrderAggregated() {
+		super();
+	}
+	
 	public OrderAggregated(Order order, Shipment shipment) {
 		this.order = order;
 		this.shipment = shipment;

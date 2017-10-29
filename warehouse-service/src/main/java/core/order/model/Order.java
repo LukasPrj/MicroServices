@@ -6,7 +6,11 @@ public class Order {
 	private long orderId;
 	private Customer customer;
 	
-	public Order(long orderId, Item item, Customer customer) {
+	public Order() {
+		super();
+	}
+	
+	public Order(long orderId, Customer customer, Item item) {
 		this.orderId = orderId;
 		this.item = item;
 		this.customer = customer;
@@ -17,8 +21,20 @@ public class Order {
 		return this.orderId;
 	}
 	
+	public void setOrderId(long orderId) {
+		this.orderId = orderId;
+	}
+	
 	public Customer getOrderCustomer() {
 		return this.customer;
+	}
+	
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+	
+	public void setOrderItem(Item item) {
+		this.item = item;
 	}
 	
 	public Item getOrderItem() {

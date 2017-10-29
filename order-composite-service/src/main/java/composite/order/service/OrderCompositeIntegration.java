@@ -24,7 +24,7 @@ public class OrderCompositeIntegration {
 	
 	public ResponseEntity<Order> placeOrder(long orderId) {
         URI uri = util.getServiceUrl("warehouse-service");
-        String url = uri.toString() + "/order/" + orderId;
+        String url = uri.toString() + "/placeorder/" + orderId;
         LOG.debug("Getting Order from URL: {}", url);
 
         ResponseEntity<String> resultStr = restTemplate.getForEntity(url, String.class);

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: order-composite-service
+  logging:
+	level:
+		composite.order.service: DEBUG
+server:
+  port: 0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:9091/eureka}
+  instance:
+    preferIpAddress: true

@@ -12,7 +12,7 @@ import core.shipment.model.Shipment;
 public class ShipmentService {
 	@RequestMapping("/ship/{orderId}")
 	public Shipment shipOrder(@PathVariable long orderId) {
-		return new Shipment (new Random().nextLong(), orderId, "Waterloolaan 16, Brussels");
+		return new Shipment (new Random().nextInt(1000), orderId, "Waterloolaan 16, Brussels");
 	}
 	
 }

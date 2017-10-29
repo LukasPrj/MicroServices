@@ -14,8 +14,8 @@ import core.order.model.Order;
 public class WarehouseService {
 
     @RequestMapping("/placeorder/{item}")
-    public Order getOrder(@PathVariable String item) {
-        return new Order(new Random().nextLong(),new Item(new Random().nextInt(),item), 
-        		new Customer("Accenture","Brussels"));
+    public Order getOrder(@PathVariable int	 item) {
+        return new Order(new Random().nextInt(1000), new Customer("Accenture","Brussels"),
+        		new Item(item,"An awesome item; so much wow!"));
     }
 }

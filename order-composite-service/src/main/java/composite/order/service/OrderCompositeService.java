@@ -30,8 +30,8 @@ public class OrderCompositeService {
 	
 	@RequestMapping("/placeOrder/{orderId}")
 	public ResponseEntity<OrderAggregated> placeOrder(@PathVariable long orderId) {
-		return null;
-		/*Order order = null;
+		LOG.info("Received placement of order " + orderId + " at " + new Date());
+		Order order = null;
 		ResponseEntity<Order> orderResult = integration.placeOrder(orderId);
 		if (!orderResult.getStatusCode().is2xxSuccessful())
 			LOG.error("Call to warehouse service failed: {)", orderResult.getStatusCode());
@@ -46,6 +46,6 @@ public class OrderCompositeService {
 			shipment = shipmentResult.getBody();
 		
 		OrderAggregated orderAgg = new OrderAggregated(order, shipment);
-		return util.createOkResponse(orderAgg);*/
+		return util.createOkResponse(orderAgg);
 	}
 }
