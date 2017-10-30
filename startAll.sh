@@ -1,4 +1,5 @@
-./startServiceDiscoveryServer.sh
+./startServiceDiscoveryServer.sh ; ./startHystixDashboardServer.sh
+./startEdgeServer.sh ; ./startTurbineServer.sh
+
 ./startShippingService.sh
-./startWarehouseService.sh
 ./startOrderCompositeService.sh

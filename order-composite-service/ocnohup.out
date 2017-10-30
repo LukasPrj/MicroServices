@@ -1,12 +1,12 @@
-Starting a Gradle Daemon, 2 busy and 1 incompatible Daemons could not be reused, use --status for details
+Starting a Gradle Daemon, 9 busy and 1 incompatible Daemons could not be reused, use --status for details
 :compileJava UP-TO-DATE
 :processResources UP-TO-DATE
 :classes UP-TO-DATE
 :findMainClass
 :bootRun
-2017-10-30 19:35:38.909  INFO 12804 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@112b668: startup date [Mon Oct 30 19:35:38 CET 2017]; root of context hierarchy
-2017-10-30 19:35:39.719  INFO 12804 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2017-10-30 19:35:39.873  INFO 12804 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dc2122cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-30 22:25:39.391  INFO 15596 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@14a2528: startup date [Mon Oct 30 22:25:39 CET 2017]; root of context hierarchy
+2017-10-30 22:25:40.151  INFO 15596 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-30 22:25:40.315  INFO 15596 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8db5b89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -16,117 +16,451 @@ Starting a Gradle Daemon, 2 busy and 1 incompatible Daemons could not be reused,
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.5.2.RELEASE)
 
-2017-10-30 19:35:44.679  INFO 12804 --- [           main] c.o.OrderCompositeServiceApplication     : No active profile set, falling back to default profiles: default
-2017-10-30 19:35:44.727  INFO 12804 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fdec9: startup date [Mon Oct 30 19:35:44 CET 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@112b668
-2017-10-30 19:35:47.968  INFO 12804 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=507e473c-412a-36d5-8675-04c3614649f1
-2017-10-30 19:35:48.007  INFO 12804 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2017-10-30 19:35:48.917  INFO 12804 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$f233c610] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-10-30 19:35:48.938  INFO 12804 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dc2122cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-10-30 19:35:50.956  INFO 12804 --- [           main] org.xnio                                 : XNIO version 3.3.6.Final
-2017-10-30 19:35:51.021  INFO 12804 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
-2017-10-30 19:35:51.142  WARN 12804 --- [           main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
-2017-10-30 19:35:51.143  WARN 12804 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2017-10-30 19:35:51.234  INFO 12804 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
-2017-10-30 19:35:51.234  INFO 12804 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6507 ms
-2017-10-30 19:35:51.914  INFO 12804 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
-2017-10-30 19:35:51.924  INFO 12804 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
-2017-10-30 19:35:51.928  INFO 12804 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-10-30 19:35:51.930  INFO 12804 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-10-30 19:35:51.930  INFO 12804 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-10-30 19:35:51.930  INFO 12804 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2017-10-30 19:35:51.931  INFO 12804 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
-2017-10-30 19:35:51.931  INFO 12804 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
-2017-10-30 19:35:55.441  INFO 12804 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fdec9: startup date [Mon Oct 30 19:35:44 CET 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@112b668
-2017-10-30 19:35:55.715  INFO 12804 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String composite.order.service.OrderCompositeService.alive()
-2017-10-30 19:35:55.720  INFO 12804 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/placeOrder/{orderId}]}" onto public org.springframework.http.ResponseEntity<composite.order.model.OrderAggregated> composite.order.service.OrderCompositeService.placeOrder(long)
-2017-10-30 19:35:55.733  INFO 12804 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-10-30 19:35:55.734  INFO 12804 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-10-30 19:35:55.835  INFO 12804 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-10-30 19:35:55.835  INFO 12804 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-10-30 19:35:55.949  INFO 12804 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-10-30 19:35:57.600  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
-2017-10-30 19:35:57.601  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
-2017-10-30 19:35:57.602  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
-2017-10-30 19:35:57.603  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
-2017-10-30 19:35:57.603  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
-2017-10-30 19:35:57.604  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-30 19:35:57.606  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
-2017-10-30 19:35:57.606  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-30 19:35:57.613  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
-2017-10-30 19:35:57.614  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-30 19:35:57.615  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
-2017-10-30 19:35:57.615  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
-2017-10-30 19:35:57.616  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-30 19:35:57.616  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-30 19:35:57.619  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-30 19:35:57.620  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-30 19:35:57.623  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
-2017-10-30 19:35:57.623  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
-2017-10-30 19:35:57.626  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
-2017-10-30 19:35:57.626  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
-2017-10-30 19:35:57.626  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-30 19:35:57.627  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
-2017-10-30 19:35:57.629  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-30 19:35:57.631  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-30 19:35:57.633  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
-2017-10-30 19:35:57.633  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-30 19:35:57.634  INFO 12804 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2017-10-30 19:35:58.117  WARN 12804 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2017-10-30 19:35:58.118  INFO 12804 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2017-10-30 19:35:58.149  WARN 12804 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2017-10-30 19:35:58.150  INFO 12804 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2017-10-30 19:35:58.372  INFO 12804 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2017-10-30 19:35:58.406  INFO 12804 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
-2017-10-30 19:35:58.409  INFO 12804 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
-2017-10-30 19:35:58.410  INFO 12804 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
-2017-10-30 19:35:58.411  INFO 12804 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
-2017-10-30 19:35:58.413  INFO 12804 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
-2017-10-30 19:35:58.414  INFO 12804 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
-2017-10-30 19:35:58.418  INFO 12804 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
-2017-10-30 19:35:58.474  INFO 12804 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
-2017-10-30 19:35:58.497  INFO 12804 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
-2017-10-30 19:35:58.507  INFO 12804 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
-2017-10-30 19:35:58.561  INFO 12804 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6fdec9,type=ConfigurationPropertiesRebinder]
-2017-10-30 19:35:58.569  INFO 12804 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
-2017-10-30 19:35:58.985  INFO 12804 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
-2017-10-30 19:35:59.223  INFO 12804 --- [           main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 57159 (http)
-2017-10-30 19:35:59.226  INFO 12804 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 57159
-2017-10-30 19:35:59.249  INFO 12804 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2017-10-30 19:35:59.343  INFO 12804 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2017-10-30 19:35:59.772  INFO 12804 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2017-10-30 19:35:59.772  INFO 12804 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2017-10-30 19:36:00.054  INFO 12804 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2017-10-30 19:36:00.055  INFO 12804 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2017-10-30 19:36:00.517  INFO 12804 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2017-10-30 19:36:01.278  INFO 12804 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2017-10-30 19:36:01.281  INFO 12804 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2017-10-30 19:36:01.282  INFO 12804 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2017-10-30 19:36:01.282  INFO 12804 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2017-10-30 19:36:01.283  INFO 12804 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2017-10-30 19:36:01.283  INFO 12804 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2017-10-30 19:36:01.284  INFO 12804 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2017-10-30 19:36:03.406  INFO 12804 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2017-10-30 19:36:03.407  INFO 12804 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2017-10-30 19:36:03.411  INFO 12804 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2017-10-30 19:36:03.417  INFO 12804 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1509388563417 with initial instances count: 0
-2017-10-30 19:36:03.465  INFO 12804 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application order-composite-service with eureka with status UP
-2017-10-30 19:36:03.467  INFO 12804 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1509388563467, current=UP, previous=STARTING]
-2017-10-30 19:36:03.469  INFO 12804 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-COMPOSITE-SERVICE/CPX-V8UGHTLQJDJ.dir.svc.accenture.com:order-composite-service:0: registering service...
-2017-10-30 19:36:03.480  INFO 12804 --- [           main] c.o.OrderCompositeServiceApplication     : Started OrderCompositeServiceApplication in 29.903 seconds (JVM running for 31.609)
-2017-10-30 19:36:03.687  INFO 12804 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-COMPOSITE-SERVICE/CPX-V8UGHTLQJDJ.dir.svc.accenture.com:order-composite-service:0 - registration status: 204
-2017-10-30 19:36:33.409  INFO 12804 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2017-10-30 19:36:33.409  INFO 12804 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2017-10-30 19:36:33.409  INFO 12804 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2017-10-30 19:36:33.409  INFO 12804 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2017-10-30 19:36:33.409  INFO 12804 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2017-10-30 19:36:33.410  INFO 12804 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2017-10-30 19:36:33.410  INFO 12804 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2017-10-30 19:36:33.458  INFO 12804 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2017-10-30 19:37:06.440  INFO 12804 --- [  XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2017-10-30 19:37:06.440  INFO 12804 --- [  XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
-2017-10-30 19:37:06.468  INFO 12804 --- [  XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
-2017-10-30 19:37:06.488  INFO 12804 --- [  XNIO-2 task-1] c.order.service.OrderCompositeService    : Received alive check at :Mon Oct 30 19:37:06 CET 2017
-2017-10-30 19:41:01.307  INFO 12804 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2017-10-30 19:46:01.336  INFO 12804 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2017-10-30 19:51:01.346  INFO 12804 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2017-10-30 19:56:01.360  INFO 12804 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-30 22:25:44.435  INFO 15596 --- [           main] c.o.OrderCompositeServiceApplication     : No active profile set, falling back to default profiles: default
+2017-10-30 22:25:44.495  INFO 15596 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a67a45: startup date [Mon Oct 30 22:25:44 CET 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@14a2528
+2017-10-30 22:25:47.747  INFO 15596 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2017-10-30 22:25:49.059  INFO 15596 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b0fb0ffe-6a43-30e0-ab4b-d90f26d68d6e
+2017-10-30 22:25:49.127  INFO 15596 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2017-10-30 22:25:49.143  INFO 15596 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2017-10-30 22:25:49.175  INFO 15596 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-30 22:25:49.423  INFO 15596 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$b32d16ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-30 22:25:50.599  INFO 15596 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$1eedfecd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-30 22:25:50.819  INFO 15596 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-30 22:25:50.843  INFO 15596 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-30 22:25:50.999  INFO 15596 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8db5b89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-30 22:25:51.063  INFO 15596 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.config.BindingServiceConfiguration$PostProcessorConfiguration' of type [org.springframework.cloud.stream.config.BindingServiceConfiguration$PostProcessorConfiguration$$EnhancerBySpringCGLIB$$ae88f691] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-30 22:25:53.599  INFO 15596 --- [           main] org.xnio                                 : XNIO version 3.3.6.Final
+2017-10-30 22:25:53.643  INFO 15596 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2017-10-30 22:25:53.783  WARN 15596 --- [           main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2017-10-30 22:25:53.783  WARN 15596 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2017-10-30 22:25:53.835  INFO 15596 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2017-10-30 22:25:53.835  INFO 15596 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9340 ms
+2017-10-30 22:25:55.043  INFO 15596 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-30 22:25:55.059  INFO 15596 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-10-30 22:25:55.063  INFO 15596 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-30 22:25:55.063  INFO 15596 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-30 22:25:55.063  INFO 15596 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-30 22:25:55.063  INFO 15596 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-30 22:25:55.063  INFO 15596 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-10-30 22:25:55.063  INFO 15596 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-10-30 22:25:58.143  WARN 15596 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-10-30 22:25:58.143  INFO 15596 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-10-30 22:25:58.167  INFO 15596 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1810917
+2017-10-30 22:26:01.087  INFO 15596 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a67a45: startup date [Mon Oct 30 22:25:44 CET 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@14a2528
+2017-10-30 22:26:01.611  INFO 15596 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String composite.order.service.OrderCompositeService.alive()
+2017-10-30 22:26:01.611  INFO 15596 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/placeOrder/{orderId}]}" onto public org.springframework.http.ResponseEntity<composite.order.model.OrderAggregated> composite.order.service.OrderCompositeService.placeOrder(long)
+2017-10-30 22:26:01.615  INFO 15596 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-30 22:26:01.619  INFO 15596 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-30 22:26:01.955  INFO 15596 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-30 22:26:01.955  INFO 15596 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-30 22:26:02.167  INFO 15596 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-30 22:26:06.263  INFO 15596 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2017-10-30 22:26:07.723  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-10-30 22:26:07.723  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-30 22:26:07.727  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-30 22:26:07.727  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-10-30 22:26:07.727  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2017-10-30 22:26:07.727  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2017-10-30 22:26:07.731  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2017-10-30 22:26:07.731  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2017-10-30 22:26:07.735  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-10-30 22:26:07.735  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-30 22:26:07.735  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-10-30 22:26:07.739  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-30 22:26:07.739  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/channels || /channels.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-30 22:26:07.739  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-30 22:26:07.743  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/bus/env],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.EnvironmentBusEndpoint.env(java.util.Map<java.lang.String, java.lang.String>,java.lang.String)
+2017-10-30 22:26:07.747  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-10-30 22:26:07.747  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-30 22:26:07.747  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2017-10-30 22:26:07.747  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2017-10-30 22:26:07.751  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-30 22:26:07.751  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-10-30 22:26:07.751  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-30 22:26:07.755  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-10-30 22:26:07.755  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-30 22:26:07.755  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/bus/refresh],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.refresh(java.lang.String)
+2017-10-30 22:26:07.755  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2017-10-30 22:26:07.759  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-30 22:26:07.763  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2017-10-30 22:26:07.763  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2017-10-30 22:26:07.763  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-30 22:26:07.763  INFO 15596 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-10-30 22:26:09.019  WARN 15596 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-10-30 22:26:09.019  INFO 15596 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-10-30 22:26:09.463  INFO 15596 --- [           main] o.s.i.codec.kryo.CompositeKryoRegistrar  : configured Kryo registration [40, java.io.File] with serializer org.springframework.integration.codec.kryo.FileSerializer
+2017-10-30 22:26:09.923  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-30 22:26:09.943  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-10-30 22:26:09.943  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2017-10-30 22:26:09.947  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'integrationMbeanExporter' has been autodetected for JMX exposure
+2017-10-30 22:26:09.947  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-10-30 22:26:09.951  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2017-10-30 22:26:09.951  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2017-10-30 22:26:09.955  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentBusEndpoint' has been autodetected for JMX exposure
+2017-10-30 22:26:09.955  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshBusEndpoint' has been autodetected for JMX exposure
+2017-10-30 22:26:09.959  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2017-10-30 22:26:09.963  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-10-30 22:26:09.967  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-10-30 22:26:09.991  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentBusEndpoint': registering with JMX server as MBean [org.springframework.cloud.bus.endpoint:name=environmentBusEndpoint,type=EnvironmentBusEndpoint]
+2017-10-30 22:26:10.007  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2017-10-30 22:26:10.023  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2017-10-30 22:26:10.027  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshBusEndpoint': registering with JMX server as MBean [org.springframework.cloud.bus.endpoint:name=refreshBusEndpoint,type=RefreshBusEndpoint]
+2017-10-30 22:26:10.035  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-10-30 22:26:10.063  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'integrationMbeanExporter': registering with JMX server as MBean [org.springframework.integration.monitor:name=integrationMbeanExporter,type=IntegrationMBeanExporter]
+2017-10-30 22:26:10.115  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=a67a45,type=ConfigurationPropertiesRebinder]
+2017-10-30 22:26:10.119  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2017-10-30 22:26:10.131  INFO 15596 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2017-10-30 22:26:10.139  INFO 15596 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering beans for JMX exposure on startup
+2017-10-30 22:26:10.139  INFO 15596 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2017-10-30 22:26:10.147  INFO 15596 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=springCloudBusOutput': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=springCloudBusOutput]
+2017-10-30 22:26:10.215  INFO 15596 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel hystrixStreamOutput
+2017-10-30 22:26:10.215  INFO 15596 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=hystrixStreamOutput': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=hystrixStreamOutput]
+2017-10-30 22:26:10.235  INFO 15596 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2017-10-30 22:26:10.239  INFO 15596 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=springCloudBusInput': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=springCloudBusInput]
+2017-10-30 22:26:10.255  INFO 15596 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2017-10-30 22:26:10.255  INFO 15596 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=nullChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=nullChannel]
+2017-10-30 22:26:10.271  INFO 15596 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2017-10-30 22:26:10.271  INFO 15596 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=errorChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=errorChannel]
+2017-10-30 22:26:10.327  INFO 15596 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2017-10-30 22:26:10.335  INFO 15596 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal': registering with JMX server as MBean [org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal]
+2017-10-30 22:26:10.859  INFO 15596 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'order-composite-service:0.springCloudBusInput' has 1 subscriber(s).
+2017-10-30 22:26:10.863  INFO 15596 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2017-10-30 22:26:12.163  INFO 15596 --- [           main] c.o.OrderCompositeServiceApplication     : No active profile set, falling back to default profiles: default
+2017-10-30 22:26:12.171  INFO 15596 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@a7bddd: startup date [Mon Oct 30 22:26:12 CET 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a67a45
+2017-10-30 22:26:12.271  INFO 15596 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-30 22:26:12.395  INFO 15596 --- [           main] o.s.c.support.GenericApplicationContext  : Refreshing org.springframework.context.support.GenericApplicationContext@1e43885: startup date [Mon Oct 30 22:26:12 CET 2017]; root of context hierarchy
+2017-10-30 22:26:12.483  INFO 15596 --- [           main] c.o.OrderCompositeServiceApplication     : Started OrderCompositeServiceApplication in 1.576 seconds (JVM running for 41.542)
+2017-10-30 22:26:12.763  INFO 15596 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@1141ab [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50435]
+2017-10-30 22:26:12.839  INFO 15596 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'order-composite-service:0.springCloudBusOutput' has 1 subscriber(s).
+2017-10-30 22:26:12.847  INFO 15596 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'order-composite-service:0.hystrixStreamOutput' has 1 subscriber(s).
+2017-10-30 22:26:12.847  INFO 15596 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-10-30 22:26:12.923  INFO 15596 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2017-10-30 22:26:12.923  INFO 15596 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'order-composite-service:0.errorChannel' has 1 subscriber(s).
+2017-10-30 22:26:12.923  INFO 15596 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2017-10-30 22:26:12.923  INFO 15596 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147482647
+2017-10-30 22:26:12.943  INFO 15596 --- [           main] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.ktZ4DXlBQ-OqpBCa3kOdLQ, bound to: springCloudBus
+2017-10-30 22:26:44.983  INFO 15596 --- [           main] o.s.i.a.i.AmqpInboundChannelAdapter      : started inbound.springCloudBus.anonymous.ktZ4DXlBQ-OqpBCa3kOdLQ
+2017-10-30 22:26:44.983  INFO 15596 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:inbound.springCloudBus.default} as a subscriber to the 'bridge.springCloudBus' channel
+2017-10-30 22:26:44.983  INFO 15596 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started inbound.springCloudBus.default
+2017-10-30 22:26:44.983  INFO 15596 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-10-30 22:26:44.999  INFO 15596 --- [           main] ration$HystrixMetricsPollerConfiguration : Starting poller
+2017-10-30 22:26:45.097  INFO 15596 --- [           main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 50540 (http)
+2017-10-30 22:26:45.097  INFO 15596 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 50540
+2017-10-30 22:26:45.113  INFO 15596 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2017-10-30 22:26:45.219  INFO 15596 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2017-10-30 22:26:45.484  INFO 15596 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2017-10-30 22:26:45.484  INFO 15596 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2017-10-30 22:26:45.660  INFO 15596 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2017-10-30 22:26:45.660  INFO 15596 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2017-10-30 22:26:46.092  INFO 15596 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-30 22:26:46.515  INFO 15596 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2017-10-30 22:26:46.515  INFO 15596 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2017-10-30 22:26:46.515  INFO 15596 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2017-10-30 22:26:46.515  INFO 15596 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2017-10-30 22:26:46.515  INFO 15596 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2017-10-30 22:26:46.515  INFO 15596 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2017-10-30 22:26:46.515  INFO 15596 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2017-10-30 22:26:46.829  INFO 15596 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2017-10-30 22:26:46.829  INFO 15596 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2017-10-30 22:26:46.829  INFO 15596 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-10-30 22:26:46.829  INFO 15596 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1509398806829 with initial instances count: 2
+2017-10-30 22:26:46.970  INFO 15596 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application order-composite-service with eureka with status UP
+2017-10-30 22:26:46.970  INFO 15596 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1509398806970, current=UP, previous=STARTING]
+2017-10-30 22:26:46.970  INFO 15596 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-COMPOSITE-SERVICE/CPX-V8UGHTLQJDJ.dir.svc.accenture.com:order-composite-service:0: registering service...
+2017-10-30 22:26:46.986  INFO 15596 --- [           main] c.o.OrderCompositeServiceApplication     : Started OrderCompositeServiceApplication in 73.499 seconds (JVM running for 76.049)
+2017-10-30 22:26:47.037  INFO 15596 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-COMPOSITE-SERVICE/CPX-V8UGHTLQJDJ.dir.svc.accenture.com:order-composite-service:0 - registration status: 204
+2017-10-30 22:28:31.710  INFO 15596 --- [  XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-30 22:28:31.710  INFO 15596 --- [  XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-30 22:28:31.770  INFO 15596 --- [  XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 60 ms
+2017-10-30 22:28:31.814  INFO 15596 --- [  XNIO-2 task-1] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:28:31 CET 2017
+2017-10-30 22:28:32.166  INFO 15596 --- [teIntegration-1] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1593eae: startup date [Mon Oct 30 22:28:32 CET 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a67a45
+2017-10-30 22:28:32.258  INFO 15596 --- [teIntegration-1] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-30 22:28:32.510  INFO 15596 --- [teIntegration-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: warehouse-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2017-10-30 22:28:32.550  INFO 15596 --- [teIntegration-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-warehouse-service
+2017-10-30 22:28:32.586  INFO 15596 --- [teIntegration-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: warehouse-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=warehouse-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2017-10-30 22:28:32.602  INFO 15596 --- [teIntegration-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2017-10-30 22:28:32.606  INFO 15596 --- [teIntegration-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client warehouse-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=warehouse-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@b82aa4
+2017-10-30 22:28:32.734 ERROR 15596 --- [teIntegration-1] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:28:32.746 ERROR 15596 --- [teIntegration-1] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:28:32.750 ERROR 15596 --- [  XNIO-2 task-1] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:28:32.762  INFO 15596 --- [teIntegration-2] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@15ac613: startup date [Mon Oct 30 22:28:32 CET 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a67a45
+2017-10-30 22:28:32.810  INFO 15596 --- [teIntegration-2] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-30 22:28:32.870  INFO 15596 --- [teIntegration-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: shipping-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2017-10-30 22:28:32.878  INFO 15596 --- [teIntegration-2] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-shipping-service
+2017-10-30 22:28:32.878  INFO 15596 --- [teIntegration-2] c.netflix.loadbalancer.BaseLoadBalancer  : Client: shipping-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=shipping-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2017-10-30 22:28:32.882  INFO 15596 --- [teIntegration-2] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2017-10-30 22:28:32.914  INFO 15596 --- [teIntegration-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: shipping-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2017-10-30 22:28:32.918  INFO 15596 --- [teIntegration-2] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client shipping-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=shipping-service,current list of Servers=[192.168.1.41:50375],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.41:50375;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 01:00:00 CET 1970;	First connection made: Thu Jan 01 01:00:00 CET 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@1c289a0
+2017-10-30 22:28:33.266 ERROR 15596 --- [  XNIO-2 task-1] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:28:33.896  INFO 15596 --- [erListUpdater-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: shipping-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2017-10-30 22:28:36.020  INFO 15596 --- [  XNIO-2 task-2] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:28:36 CET 2017
+2017-10-30 22:28:36.020 ERROR 15596 --- [teIntegration-3] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:28:36.020 ERROR 15596 --- [teIntegration-3] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:28:36.024 ERROR 15596 --- [  XNIO-2 task-2] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:28:36.060 ERROR 15596 --- [  XNIO-2 task-2] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:28:37.488  INFO 15596 --- [  XNIO-2 task-3] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:28:37 CET 2017
+2017-10-30 22:28:37.492 ERROR 15596 --- [teIntegration-5] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:28:37.492 ERROR 15596 --- [teIntegration-5] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:28:37.492 ERROR 15596 --- [  XNIO-2 task-3] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:28:37.504 ERROR 15596 --- [  XNIO-2 task-3] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:28:38.433  INFO 15596 --- [  XNIO-2 task-4] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:28:38 CET 2017
+2017-10-30 22:28:38.433 ERROR 15596 --- [teIntegration-7] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:28:38.433 ERROR 15596 --- [teIntegration-7] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:28:38.433 ERROR 15596 --- [  XNIO-2 task-4] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:28:38.441 ERROR 15596 --- [  XNIO-2 task-4] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:28:39.126  INFO 15596 --- [  XNIO-2 task-5] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:28:39 CET 2017
+2017-10-30 22:28:39.130 ERROR 15596 --- [teIntegration-9] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:28:39.130 ERROR 15596 --- [teIntegration-9] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:28:39.130 ERROR 15596 --- [  XNIO-2 task-5] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:28:39.142 ERROR 15596 --- [  XNIO-2 task-5] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:28:39.670  INFO 15596 --- [  XNIO-2 task-6] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:28:39 CET 2017
+2017-10-30 22:28:39.674 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:28:39.674 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:28:39.678 ERROR 15596 --- [  XNIO-2 task-6] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:28:39.702 ERROR 15596 --- [  XNIO-2 task-6] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:29:02.367  INFO 15596 --- [  XNIO-2 task-7] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:02 CET 2017
+2017-10-30 22:29:02.371 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:29:02.371 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:29:02.371 ERROR 15596 --- [  XNIO-2 task-7] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:29:02.387 ERROR 15596 --- [  XNIO-2 task-7] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:29:02.779  INFO 15596 --- [  XNIO-2 task-8] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:02 CET 2017
+2017-10-30 22:29:02.783 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:29:02.787 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:29:02.791 ERROR 15596 --- [  XNIO-2 task-8] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:29:02.807 ERROR 15596 --- [  XNIO-2 task-8] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:29:03.079  INFO 15596 --- [  XNIO-2 task-9] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:03 CET 2017
+2017-10-30 22:29:03.079 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:29:03.079 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:29:03.079 ERROR 15596 --- [  XNIO-2 task-9] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:29:03.091 ERROR 15596 --- [  XNIO-2 task-9] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:29:03.415  INFO 15596 --- [ XNIO-2 task-10] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:03 CET 2017
+2017-10-30 22:29:03.419 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:29:03.419 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:29:03.419 ERROR 15596 --- [ XNIO-2 task-10] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:29:03.427 ERROR 15596 --- [ XNIO-2 task-10] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:29:03.607  INFO 15596 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: warehouse-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2017-10-30 22:29:03.751  INFO 15596 --- [ XNIO-2 task-11] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:03 CET 2017
+2017-10-30 22:29:04.119  INFO 15596 --- [ XNIO-2 task-12] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:04 CET 2017
+2017-10-30 22:29:04.451  INFO 15596 --- [ XNIO-2 task-13] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:04 CET 2017
+2017-10-30 22:29:04.874  INFO 15596 --- [ XNIO-2 task-14] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:04 CET 2017
+2017-10-30 22:29:05.493  INFO 15596 --- [ XNIO-2 task-15] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:05 CET 2017
+2017-10-30 22:29:06.098  INFO 15596 --- [ XNIO-2 task-16] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:06 CET 2017
+2017-10-30 22:29:06.662  INFO 15596 --- [ XNIO-2 task-17] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:06 CET 2017
+2017-10-30 22:29:07.142  INFO 15596 --- [ XNIO-2 task-18] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:07 CET 2017
+2017-10-30 22:29:07.580  INFO 15596 --- [ XNIO-2 task-19] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:07 CET 2017
+2017-10-30 22:29:08.010  INFO 15596 --- [ XNIO-2 task-20] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:08 CET 2017
+2017-10-30 22:29:08.450  INFO 15596 --- [ XNIO-2 task-21] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:08 CET 2017
+2017-10-30 22:29:08.894  INFO 15596 --- [ XNIO-2 task-22] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:08 CET 2017
+2017-10-30 22:29:09.442  INFO 15596 --- [ XNIO-2 task-23] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:09 CET 2017
+2017-10-30 22:29:09.662  INFO 15596 --- [ XNIO-2 task-24] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:09 CET 2017
+2017-10-30 22:29:19.641  INFO 15596 --- [ XNIO-2 task-25] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:19 CET 2017
+2017-10-30 22:29:20.049  INFO 15596 --- [ XNIO-2 task-26] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:20 CET 2017
+2017-10-30 22:29:20.353  INFO 15596 --- [ XNIO-2 task-27] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:20 CET 2017
+2017-10-30 22:29:20.793  INFO 15596 --- [ XNIO-2 task-28] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:29:20 CET 2017
+2017-10-30 22:30:24.160  INFO 15596 --- [ XNIO-2 task-29] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:30:24 CET 2017
+2017-10-30 22:30:25.167 ERROR 15596 --- [ HystrixTimer-3] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was com.netflix.hystrix.exception.HystrixTimeoutException
+2017-10-30 22:30:25.167 ERROR 15596 --- [ XNIO-2 task-29] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:30:25.175 ERROR 15596 --- [ XNIO-2 task-29] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:31:46.521  INFO 15596 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-30 22:33:32.283  INFO 15596 --- [ XNIO-2 task-30] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:33:32 CET 2017
+2017-10-30 22:33:33.287 ERROR 15596 --- [ HystrixTimer-2] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was com.netflix.hystrix.exception.HystrixTimeoutException
+2017-10-30 22:33:33.287 ERROR 15596 --- [ XNIO-2 task-30] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:33:33.295 ERROR 15596 --- [ XNIO-2 task-30] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:32.227  INFO 15596 --- [ XNIO-2 task-31] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:32 CET 2017
+2017-10-30 22:35:32.227 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:32.227 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:32.231 ERROR 15596 --- [ XNIO-2 task-31] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:32.239 ERROR 15596 --- [ XNIO-2 task-31] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:32.907  INFO 15596 --- [ XNIO-2 task-32] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:32 CET 2017
+2017-10-30 22:35:32.907 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:32.911 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:32.911 ERROR 15596 --- [ XNIO-2 task-32] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:32.915 ERROR 15596 --- [ XNIO-2 task-32] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:33.674  INFO 15596 --- [  XNIO-2 task-1] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:33 CET 2017
+2017-10-30 22:35:33.674 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:33.678 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:33.678 ERROR 15596 --- [  XNIO-2 task-1] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:33.686 ERROR 15596 --- [  XNIO-2 task-1] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:34.356  INFO 15596 --- [  XNIO-2 task-2] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:34 CET 2017
+2017-10-30 22:35:34.356 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:34.356 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:34.356 ERROR 15596 --- [  XNIO-2 task-2] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:34.364 ERROR 15596 --- [  XNIO-2 task-2] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:35.093  INFO 15596 --- [  XNIO-2 task-3] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:35 CET 2017
+2017-10-30 22:35:35.097 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:35.097 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:35.097 ERROR 15596 --- [  XNIO-2 task-3] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:35.117 ERROR 15596 --- [  XNIO-2 task-3] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:35.718  INFO 15596 --- [  XNIO-2 task-4] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:35 CET 2017
+2017-10-30 22:35:35.726 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:35.726 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:35.730 ERROR 15596 --- [  XNIO-2 task-4] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:35.758 ERROR 15596 --- [  XNIO-2 task-4] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:36.288  INFO 15596 --- [  XNIO-2 task-5] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:36 CET 2017
+2017-10-30 22:35:36.288 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:36.288 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:36.292 ERROR 15596 --- [  XNIO-2 task-5] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:36.300 ERROR 15596 --- [  XNIO-2 task-5] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:36.836  INFO 15596 --- [  XNIO-2 task-6] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:36 CET 2017
+2017-10-30 22:35:36.840 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:36.840 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:36.840 ERROR 15596 --- [  XNIO-2 task-6] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:36.848 ERROR 15596 --- [  XNIO-2 task-6] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:37.416  INFO 15596 --- [  XNIO-2 task-7] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:37 CET 2017
+2017-10-30 22:35:37.416 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:37.416 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:37.416 ERROR 15596 --- [  XNIO-2 task-7] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:37.424 ERROR 15596 --- [  XNIO-2 task-7] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:37.648  INFO 15596 --- [  XNIO-2 task-8] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:37 CET 2017
+2017-10-30 22:35:37.652 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:37.652 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:37.652 ERROR 15596 --- [  XNIO-2 task-8] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:37.660 ERROR 15596 --- [  XNIO-2 task-8] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:37.820  INFO 15596 --- [  XNIO-2 task-9] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:37 CET 2017
+2017-10-30 22:35:37.820 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:37.820 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:37.824 ERROR 15596 --- [  XNIO-2 task-9] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:37.828 ERROR 15596 --- [  XNIO-2 task-9] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:37.980  INFO 15596 --- [ XNIO-2 task-10] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:37 CET 2017
+2017-10-30 22:35:37.984 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:37.984 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:37.984 ERROR 15596 --- [ XNIO-2 task-10] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:37.988 ERROR 15596 --- [ XNIO-2 task-10] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:38.176  INFO 15596 --- [ XNIO-2 task-11] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:38 CET 2017
+2017-10-30 22:35:38.180 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:38.180 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:38.180 ERROR 15596 --- [ XNIO-2 task-11] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:38.188 ERROR 15596 --- [ XNIO-2 task-11] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:38.376  INFO 15596 --- [ XNIO-2 task-12] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:38 CET 2017
+2017-10-30 22:35:38.376 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:38.376 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:38.376 ERROR 15596 --- [ XNIO-2 task-12] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:38.384 ERROR 15596 --- [ XNIO-2 task-12] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:38.584  INFO 15596 --- [ XNIO-2 task-13] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:38 CET 2017
+2017-10-30 22:35:38.588 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:38.588 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:38.588 ERROR 15596 --- [ XNIO-2 task-13] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:38.592 ERROR 15596 --- [ XNIO-2 task-13] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:38.816  INFO 15596 --- [ XNIO-2 task-14] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:38 CET 2017
+2017-10-30 22:35:38.816 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:38.820 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:38.820 ERROR 15596 --- [ XNIO-2 task-14] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:38.828 ERROR 15596 --- [ XNIO-2 task-14] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:39.028  INFO 15596 --- [ XNIO-2 task-15] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:39 CET 2017
+2017-10-30 22:35:39.028 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:39.032 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:39.032 ERROR 15596 --- [ XNIO-2 task-15] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:39.040 ERROR 15596 --- [ XNIO-2 task-15] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:39.248  INFO 15596 --- [ XNIO-2 task-16] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:39 CET 2017
+2017-10-30 22:35:39.252 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:39.252 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:39.252 ERROR 15596 --- [ XNIO-2 task-16] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:39.260 ERROR 15596 --- [ XNIO-2 task-16] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:39.428  INFO 15596 --- [ XNIO-2 task-17] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:39 CET 2017
+2017-10-30 22:35:39.428 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:39.432 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:39.432 ERROR 15596 --- [ XNIO-2 task-17] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:39.440 ERROR 15596 --- [ XNIO-2 task-17] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:39.596  INFO 15596 --- [ XNIO-2 task-18] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:39 CET 2017
+2017-10-30 22:35:39.600 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:39.600 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:39.600 ERROR 15596 --- [ XNIO-2 task-18] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:39.604 ERROR 15596 --- [ XNIO-2 task-18] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:39.760  INFO 15596 --- [ XNIO-2 task-19] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:39 CET 2017
+2017-10-30 22:35:39.764 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:39.764 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:39.764 ERROR 15596 --- [ XNIO-2 task-19] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:39.772 ERROR 15596 --- [ XNIO-2 task-19] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:39.928  INFO 15596 --- [ XNIO-2 task-20] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:39 CET 2017
+2017-10-30 22:35:39.928 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:35:39.928 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:35:39.928 ERROR 15596 --- [ XNIO-2 task-20] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:39.944 ERROR 15596 --- [ XNIO-2 task-20] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:40.108  INFO 15596 --- [ XNIO-2 task-21] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:40 CET 2017
+2017-10-30 22:35:40.108 ERROR 15596 --- [ XNIO-2 task-21] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:35:40.108 ERROR 15596 --- [ XNIO-2 task-21] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:40.116 ERROR 15596 --- [ XNIO-2 task-21] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:40.324  INFO 15596 --- [ XNIO-2 task-22] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:40 CET 2017
+2017-10-30 22:35:40.324 ERROR 15596 --- [ XNIO-2 task-22] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:35:40.324 ERROR 15596 --- [ XNIO-2 task-22] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:40.332 ERROR 15596 --- [ XNIO-2 task-22] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:40.664  INFO 15596 --- [ XNIO-2 task-23] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:40 CET 2017
+2017-10-30 22:35:40.664 ERROR 15596 --- [ XNIO-2 task-23] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:35:40.668 ERROR 15596 --- [ XNIO-2 task-23] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:40.676 ERROR 15596 --- [ XNIO-2 task-23] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:40.836  INFO 15596 --- [ XNIO-2 task-24] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:40 CET 2017
+2017-10-30 22:35:40.836 ERROR 15596 --- [ XNIO-2 task-24] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:35:40.836 ERROR 15596 --- [ XNIO-2 task-24] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:40.840 ERROR 15596 --- [ XNIO-2 task-24] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:35:41.100  INFO 15596 --- [ XNIO-2 task-25] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:35:41 CET 2017
+2017-10-30 22:35:41.100 ERROR 15596 --- [ XNIO-2 task-25] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:35:41.100 ERROR 15596 --- [ XNIO-2 task-25] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:35:41.108 ERROR 15596 --- [ XNIO-2 task-25] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:36:46.531  INFO 15596 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-30 22:36:57.324  INFO 15596 --- [ XNIO-2 task-26] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:36:57 CET 2017
+2017-10-30 22:36:57.324 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:36:57.324 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:36:57.324 ERROR 15596 --- [ XNIO-2 task-26] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:36:57.332 ERROR 15596 --- [ XNIO-2 task-26] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:37:53.652  INFO 15596 --- [ XNIO-2 task-27] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:37:53 CET 2017
+2017-10-30 22:37:53.652 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:37:53.652 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:37:53.652 ERROR 15596 --- [ XNIO-2 task-27] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:37:53.660 ERROR 15596 --- [ XNIO-2 task-27] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:37:55.575  INFO 15596 --- [ XNIO-2 task-28] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:37:55 CET 2017
+2017-10-30 22:37:55.579 ERROR 15596 --- [ XNIO-2 task-28] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:37:55.579 ERROR 15596 --- [ XNIO-2 task-28] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:37:55.603 ERROR 15596 --- [ XNIO-2 task-28] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:37:56.297  INFO 15596 --- [ XNIO-2 task-29] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:37:56 CET 2017
+2017-10-30 22:37:56.297 ERROR 15596 --- [ XNIO-2 task-29] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:37:56.301 ERROR 15596 --- [ XNIO-2 task-29] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:37:56.309 ERROR 15596 --- [ XNIO-2 task-29] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:38:06.936  INFO 15596 --- [ XNIO-2 task-30] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:38:06 CET 2017
+2017-10-30 22:38:06.936 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:38:06.936 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:38:06.936 ERROR 15596 --- [ XNIO-2 task-30] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:38:06.944 ERROR 15596 --- [ XNIO-2 task-30] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:38:07.558  INFO 15596 --- [ XNIO-2 task-31] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:38:07 CET 2017
+2017-10-30 22:38:07.562 ERROR 15596 --- [ XNIO-2 task-31] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:38:07.566 ERROR 15596 --- [ XNIO-2 task-31] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:38:07.590 ERROR 15596 --- [ XNIO-2 task-31] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:38:08.098  INFO 15596 --- [ XNIO-2 task-32] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:38:08 CET 2017
+2017-10-30 22:38:08.102 ERROR 15596 --- [ XNIO-2 task-32] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:38:08.102 ERROR 15596 --- [ XNIO-2 task-32] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:38:08.110 ERROR 15596 --- [ XNIO-2 task-32] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:38:08.286  INFO 15596 --- [  XNIO-2 task-1] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:38:08 CET 2017
+2017-10-30 22:38:08.286 ERROR 15596 --- [  XNIO-2 task-1] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:38:08.286 ERROR 15596 --- [  XNIO-2 task-1] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:38:08.290 ERROR 15596 --- [  XNIO-2 task-1] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:38:08.678  INFO 15596 --- [  XNIO-2 task-2] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:38:08 CET 2017
+2017-10-30 22:38:08.678 ERROR 15596 --- [  XNIO-2 task-2] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:38:08.678 ERROR 15596 --- [  XNIO-2 task-2] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:38:08.686 ERROR 15596 --- [  XNIO-2 task-2] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:38:09.054  INFO 15596 --- [  XNIO-2 task-3] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:38:09 CET 2017
+2017-10-30 22:38:09.054 ERROR 15596 --- [  XNIO-2 task-3] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:38:09.054 ERROR 15596 --- [  XNIO-2 task-3] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:38:09.062 ERROR 15596 --- [  XNIO-2 task-3] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:38:09.222  INFO 15596 --- [  XNIO-2 task-4] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:38:09 CET 2017
+2017-10-30 22:38:09.222 ERROR 15596 --- [  XNIO-2 task-4] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:38:09.222 ERROR 15596 --- [  XNIO-2 task-4] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:38:09.226 ERROR 15596 --- [  XNIO-2 task-4] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:38:09.490  INFO 15596 --- [  XNIO-2 task-5] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:38:09 CET 2017
+2017-10-30 22:38:09.490 ERROR 15596 --- [  XNIO-2 task-5] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:38:09.490 ERROR 15596 --- [  XNIO-2 task-5] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:38:09.498 ERROR 15596 --- [  XNIO-2 task-5] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:38:09.854  INFO 15596 --- [  XNIO-2 task-6] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:38:09 CET 2017
+2017-10-30 22:38:09.854 ERROR 15596 --- [  XNIO-2 task-6] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:38:09.854 ERROR 15596 --- [  XNIO-2 task-6] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:38:09.862 ERROR 15596 --- [  XNIO-2 task-6] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:38:10.150  INFO 15596 --- [  XNIO-2 task-7] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:38:10 CET 2017
+2017-10-30 22:38:10.150 ERROR 15596 --- [  XNIO-2 task-7] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: Hystrix circuit short-circuited and is OPEN
+2017-10-30 22:38:10.150 ERROR 15596 --- [  XNIO-2 task-7] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:38:10.158 ERROR 15596 --- [  XNIO-2 task-7] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:38:33.515  INFO 15596 --- [  XNIO-2 task-8] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:38:33 CET 2017
+2017-10-30 22:38:33.519 ERROR 15596 --- [eIntegration-10] composite.order.service.Util             : Cannot get service URL for: warehouse-service
+2017-10-30 22:38:33.519 ERROR 15596 --- [eIntegration-10] c.o.service.OrderCompositeIntegration    : Fallback method for placing an order. Handled exception for id 4. The original exception was java.lang.RuntimeException: java.lang.NullPointerException
+2017-10-30 22:38:33.519 ERROR 15596 --- [  XNIO-2 task-8] c.order.service.OrderCompositeService    : Call to warehouse service failed: {)
+2017-10-30 22:38:33.535 ERROR 15596 --- [  XNIO-2 task-8] c.order.service.OrderCompositeService    : Call to shipment service failed: {)
+2017-10-30 22:38:41.457  INFO 15596 --- [  XNIO-2 task-9] c.order.service.OrderCompositeService    : Received placement of order 4 at Mon Oct 30 22:38:41 CET 2017

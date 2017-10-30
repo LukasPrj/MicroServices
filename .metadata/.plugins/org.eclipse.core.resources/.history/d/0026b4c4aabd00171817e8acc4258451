@@ -1,0 +1,9 @@
+package support.turbine;
+
+public class TurbineApplication {
+
+	public TurbineApplication() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

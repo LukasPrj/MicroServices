@@ -40,7 +40,7 @@ public class OrderCompositeService {
 		
 		Shipment shipment = null;
 		ResponseEntity<Shipment> shipmentResult = integration.placeShipment(orderId);
-		if (!orderResult.getStatusCode().is2xxSuccessful())
+		if (!shipmentResult.getStatusCode().is2xxSuccessful())
 			LOG.error("Call to shipment service failed: {)", orderResult.getStatusCode());
 		else
 			shipment = shipmentResult.getBody();

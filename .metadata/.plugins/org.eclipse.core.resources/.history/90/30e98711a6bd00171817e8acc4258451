@@ -1,0 +1,9 @@
+package support.hystrix.dashboard;
+
+public class HystrixDashboardApplication {
+
+	public HystrixDashboardApplication() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
