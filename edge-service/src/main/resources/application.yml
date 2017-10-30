@@ -12,7 +12,7 @@ endpoints:
 zuul:
   ignoredServices: "*"
   routes:
-    order-composite-service:
+    ORDER-COMPOSITE-SERVICE:
       path: /ordercomposite/**
 #      stripPrefix: false
 
