@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: order-composite-service
+  logging:
+    level:
+      composite.order: DEBUG	
+server:
+  port: 54784
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:9091/eureka}
+    leaseRenewalIntervalInSeconds: 10
+  instance:
+    preferIpAddress: true

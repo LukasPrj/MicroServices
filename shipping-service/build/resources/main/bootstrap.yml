@@ -3,7 +3,9 @@ spring:
     name: shipping-service
     
 server:
-  port: 0
+  port: 8000
+  undertow:
+    worker-threads: 10
 
 eureka:
   client:
