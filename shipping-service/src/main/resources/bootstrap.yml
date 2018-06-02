@@ -10,7 +10,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:9091/eureka}
+      defaultZone: ${EUREKA_URI:http://localhost:8000/eureka}
   instance:
     preferIpAddress: true
     leaseRenewalIntervalInSeconds: 10
