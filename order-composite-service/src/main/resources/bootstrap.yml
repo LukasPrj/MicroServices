@@ -4,15 +4,3 @@ spring:
   logging:
     level:
       composite.order: DEBUG	
-server:
-  port: 8000
-  undertow:
-    worker-threads: 10
-  
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:9091/eureka}
-    leaseRenewalIntervalInSeconds: 10
-  instance:
-    preferIpAddress: true
