@@ -1,9 +1,0 @@
-package support.edge;
-
-public class ZuulApplication {
-
-	public ZuulApplication() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

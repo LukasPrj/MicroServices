@@ -1,9 +1,0 @@
-package model;
-
-public class OrderApplication {
-
-	public OrderApplication() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

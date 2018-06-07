@@ -1,7 +1,0 @@
-package support.eureka;
-
-@SpringBootApplication
-@EnableDis
-public class EurekaApplication {
-
-}
