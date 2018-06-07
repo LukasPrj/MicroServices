@@ -1,0 +1,15 @@
+server:
+  port: 8000
+  undertow:
+    worker-threads: 10
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://18.219.250.222:8000//eureka}
+    healthcheck:
+       enabled: true 
+  instance:
+    preferIpAddress: true
+    leaseRenewalIntervalInSeconds: 10
+    instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
