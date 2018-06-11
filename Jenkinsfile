@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Git') {
       steps {
-        git(url: 'https://github.com/LukasPrj/MicroServices', branch: 'master')
+        git(url: 'https://github.com/LukasPrj/MicroServices', branch: 'dockerbranch')
       }
     }
     stage('Build') {
