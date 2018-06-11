@@ -5,6 +5,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.stereotype.Controller;
 
+
 @SpringBootApplication
 @Controller
 @EnableZuulProxy
