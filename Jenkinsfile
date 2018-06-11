@@ -19,7 +19,7 @@ while read -r folder; do
                 docker build -t ${folder} .
                 cd ..
         fi
-done <<< "$folders"'''
+done <<<"$folders"'''
       }
     }
   }
