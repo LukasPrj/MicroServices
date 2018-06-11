@@ -8,20 +8,24 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh '''!#/bin/bash
+        sh '''set -f
+IFS=
 
 folders=`git diff --name-only $GIT_PREVIOUS_COMMIT $GIT_COMMIT | sort -u | awk \'BEGIN {FS="/"} {print $1}\' | uniq`;
 
 echo "The following folders have been changed:"
 echo $folders
 
-while read -r folder; do
+echo $folders | while read folder; do
         if [ -d ${folder} ]; then
                 cd ${folder}
                 docker build -t ${folder} .
                 cd ..
         fi
-done <<<"$folders"'''
+done
+
+unset IFS
+set +f'''
       }
     }
   }
