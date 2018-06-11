@@ -13,7 +13,7 @@ echo $folders
 export changed_folders=$folders'''
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             git(url: 'https://github.com/LukasPrj/MicroServices', branch: 'master')
           }
@@ -22,7 +22,7 @@ export changed_folders=$folders'''
     }
     stage('Print') {
       steps {
-        sh 'for a in "${changed_folders[@]}" ; do echo "--" "$a" "--" ; done'
+        sh 'echo $changed_folders'
       }
     }
   }
