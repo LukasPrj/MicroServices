@@ -10,10 +10,22 @@ pipeline {
 echo "The following folders have been changed:"
 echo $folders
 
-export changed_folders=$folders'''
+set -f
+IFS=$\'\\n\'
+for f in "${folders[@]}"; do 
+folder=\'\'
+folder=`find . -type d -name ${f} | head -1`
+cd folder
+echo $folder
+; done
+
+unset IFS
+set +f
+
+'''
           }
         }
-        stage('error') {
+        stage('Git') {
           steps {
             git(url: 'https://github.com/LukasPrj/MicroServices', branch: 'master')
           }
