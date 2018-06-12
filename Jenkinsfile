@@ -11,7 +11,7 @@ pipeline {
         sh '''set -f
 IFS=
 
-echo $USER
+whoami
 
 dockerLogin=`aws ecr get-login --no-include-email`
 folders=`git diff --name-only $GIT_PREVIOUS_COMMIT $GIT_COMMIT | sort -u | awk \'BEGIN {FS="/"} {print $1}\' | uniq`;
