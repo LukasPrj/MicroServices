@@ -21,6 +21,7 @@ echo $folders
 
 echo $folders | while read folder; do
         if [ -d ${folder} ]; then
+                echo "The following path is a folder: " ${folder}
                 cd ${folder}
                 docker build -t ${folder} .
                 docker tag ${folder} ${ecrurl}
