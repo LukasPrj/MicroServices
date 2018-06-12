@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'cloudbees/jnlp-slave-with-java-build-tools'
+    }
+
+  }
   stages {
     stage('Git') {
       steps {
