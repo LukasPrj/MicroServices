@@ -1,38 +1,34 @@
 pipeline {
   agent any
   stages {
-    stage('Git') {
+    stage('Git Pull') {
       steps {
         git(url: 'https://github.com/LukasPrj/MicroServices', branch: 'dockerbranch')
       }
     }
     stage('Build') {
       steps {
-        sh '''set -f
-IFS=
-
-whoami
-
-dockerLogin=`aws ecr get-login --no-include-email`
-folders=`git diff --name-only $GIT_PREVIOUS_COMMIT $GIT_COMMIT | sort -u | awk \'BEGIN {FS="/"} {print $1}\' | uniq`;
+        sh '''folders=`git diff --name-only $GIT_PREVIOUS_COMMIT $GIT_COMMIT | sort -u | awk \'BEGIN {FS="/"} {print $1}\' | uniq`;
 
 echo "The following folders have been changed:"
 echo $folders
 
-echo $folders | while read folder; do
-        if [ -d ${folder} ]; then
-                echo "The following path is a folder: " ${folder}
-                cd ${folder}
-                docker build -t ${folder} .
-                docker tag ${folder} ${ecrurl}
-                eval $dockerLogin
-                docker push ${ecrurl}
-                cd ..
-        fi
-done
+echo $folders > env.properties
 
-unset IFS
-set +f'''
+
+'''
+      }
+    }
+    stage('Gradle build') {
+      steps {
+        sh '''$folders=`cat env.properties`
+
+echo $folders'''
+      }
+    }
+    stage('Unit testing') {
+      steps {
+        echo 'Performing unit tests'
       }
     }
   }
