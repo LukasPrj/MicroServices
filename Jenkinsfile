@@ -6,7 +6,7 @@ pipeline {
         git(url: 'https://github.com/LukasPrj/MicroServices', branch: 'dockerbranch')
       }
     }
-    stage('Build') {
+    stage('Determine impacted services') {
       steps {
         sh '''folders=`git diff --name-only $GIT_PREVIOUS_COMMIT $GIT_COMMIT | sort -u | awk \'BEGIN {FS="/"} {print $1}\' | uniq`;
 
@@ -23,7 +23,19 @@ echo $folders > env.properties
       steps {
         sh '''folders=`cat env.properties`
 
-echo $folders'''
+set -f
+IFS=
+
+echo $folders | while read folder; do
+        if [ -d ${folder} ]; then
+                cd ${folder}
+                gradle build
+                cd ..
+        fi
+done
+
+unset IFS
+set +f'''
       }
     }
     stage('Unit testing') {
