@@ -21,9 +21,7 @@ echo $folders > env.properties
     }
     stage('Gradle build') {
       steps {
-        sh '''$folders=`cat env.properties`
-
-echo $folders'''
+        sh 'cat env.properties'
       }
     }
     stage('Unit testing') {
