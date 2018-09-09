@@ -73,10 +73,11 @@ IFS=
 echo $folders | while read folder; do
         if [ -d ${folder} ]; then
                 cd ${folder}
-                docker tag ${folder} ${ecrurl}
+                fullName=${folder}":latest"
+                fullUrl=${ecrurl}${fullName}
+                docker tag ${fullName} ${fullUrl}
                 eval $dockerLogin
-                fullName=${ecrurl}${folder}
-                docker push ${fullName}
+                docker push ${fullUrl}
                 cd ..
         fi
 done
