@@ -29,7 +29,7 @@ IFS=
 echo $folders | while read folder; do
         if [ -d ${folder} ]; then
                 cd ${folder}
-                gradle build
+                gradle build --stacktrace
                 cd ..
         fi
 done
