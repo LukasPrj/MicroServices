@@ -75,7 +75,7 @@ echo $folders | while read folder; do
                 cd ${folder}
                 docker tag ${folder} ${ecrurl}
                 eval $dockerLogin
-                fullName=${ecrurl}"/"${folder}
+                fullName=${ecrurl}${folder}
                 docker push ${fullName}
                 cd ..
         fi
@@ -87,6 +87,6 @@ set +f'''
     }
   }
   environment {
-    ecrurl = '243144755297.dkr.ecr.us-east-2.amazonaws.com/docker-microservices'
+    ecrurl = '243144755297.dkr.ecr.us-east-2.amazonaws.com/'
   }
 }
