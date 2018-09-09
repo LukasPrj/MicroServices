@@ -76,7 +76,7 @@ echo $folders | while read folder; do
                 docker tag ${folder} ${ecrurl}
                 eval $dockerLogin
                 fullName=${ecrurl}"/"${folder}
-                docker push ${ecrurl}
+                docker push ${fullName}
                 cd ..
         fi
 done
