@@ -1,11 +1,11 @@
 spring:
-	rabbitmq:
-		host: rabbitmq
+ rabbitmq:
+ host: rabbitmq
 		
 server:
-  port: 8000
-  undertow:
-    worker-threads: 10
+ port: 8000
+ undertow:
+  worker-threads: 10
  
 eureka:
   client:
