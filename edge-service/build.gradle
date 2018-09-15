@@ -52,4 +52,3 @@ task wrapper(type: Wrapper) {
 tasks.withType(JavaExec) {
     jvmArgs = ['-Xmx500m']
 }
-
