@@ -47,3 +47,7 @@ dependencies {
 task wrapper(type: Wrapper) {
     gradleVersion = '4.2.1'
 }
+
+tasks.withType(JavaExec) {
+    jvmArgs = ['-Xmx500m']
+}
