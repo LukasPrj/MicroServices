@@ -15,10 +15,9 @@ folders=`git diff --name-only $GIT_PREVIOUS_COMMIT $GIT_COMMIT | sort -u | awk \
 echo "The following folders have been changed:"
 echo $folders
 
-for service in $folders
-do
+for service in $folders; do
    echo $service >> env.properties
-end
+done
 
 
 '''
