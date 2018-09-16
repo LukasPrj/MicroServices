@@ -8,7 +8,7 @@ server:
 eureka:
   environmnent: aws
   client:
-    registerWithEureka: true
+    registerWithEureka: false
     fetchRegistry: true
     region: us-east-2
     eurekaServerPort: 9091
