@@ -14,6 +14,7 @@ eureka:
     eurekaServerPort: 9091
     useDnsForFetchingServiceUrls: true
     eurekaServerDNSName: prod.microservices.com
+    eurekaServerURLContext: eureka
     preferSameZone: false
   server:
     region: us-east-2
