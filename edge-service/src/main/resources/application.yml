@@ -17,7 +17,7 @@ zuul:
 #      stripPrefix: false
 
 server:
-  port: 8000
+  port: 9092
 
 logging:
   level:
