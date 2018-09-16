@@ -1,16 +1,12 @@
-spring:
- rabbitmq:
- host: rabbitmq
-		
 server:
- port: 8000
+ port: 9094
  undertow:
   worker-threads: 10
  
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://18.219.250.222:8000//eureka}
+      defaultZone: ${EUREKA_URI:http://localhost:9091//eureka}
     healthcheck:
        enabled: true
   instance:
