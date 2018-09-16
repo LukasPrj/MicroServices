@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Git Pull') {
       steps {
-        git(url: 'https://github.com/LukasPrj/MicroServices', branch: 'dockerbranch')
+        git(url: 'https://github.com/LukasPrj/MicroServices', branch: 'awsdockerbranch')
       }
     }
     stage('Determine impacted services') {
