@@ -9,7 +9,7 @@ eureka:
   environmnent: aws
   client:
     registerWithEureka: true
-    fetchRegistry: false
+    fetchRegistry: true
     region: us-east-2
     eurekaServerPort: 9091
     useDnsForFetchingServiceUrls: true
