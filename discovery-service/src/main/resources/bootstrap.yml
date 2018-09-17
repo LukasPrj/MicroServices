@@ -28,6 +28,6 @@ eureka:
       availabilityZones: us-east-2a, us-east-2b
       
   instance:
-    preferIpAddress: true
+    preferIpAddress: false
     leaseRenewalIntervalInSeconds: 10
     instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
