@@ -1,6 +1,6 @@
 FROM openjdk:8-jre-alpine 
 
-COPY ./build/libs/discovery-server-0.0.1-SNAPSHOT.jar /usr/src/application/
+COPY ./build/libs/discovery-service.jar /usr/src/application/
 
 WORKDIR /usr/src/application
 
