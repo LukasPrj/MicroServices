@@ -63,7 +63,6 @@ public class EurekaApplication {
             public String getHomePageUrl() {
                 return super.getHomePageUrl();
             }
-
            
         };
 
