@@ -26,16 +26,18 @@ public class EurekaApplication {
 	@Bean
     @Profile("aws")
     public EurekaInstanceConfigBean eurekaInstanceConfig(InetUtils inetUtils) {
-        logger.info("Setting AmazonInfo on EurekaInstanceConfigBean");
+		final int  managementPort = 9091;
+
+		logger.info("Setting AmazonInfo on EurekaInstanceConfigBean");
         final EurekaInstanceConfigBean instance = new EurekaInstanceConfigBean(inetUtils) {
 
 	   //needed only when Eureka server instance binds to EIP
             @Scheduled(initialDelay = 10000L, fixedRate = 30000L)
             public void refreshInfo() {
-                logger.debug("Checking datacenter info changes");
+            	logger.debug("Checking datacenter info changes");
                 AmazonInfo newInfo = AmazonInfo.Builder.newBuilder().autoBuild("eureka");
                 if (!this.getDataCenterInfo().equals(newInfo)) {
-                    logger.info("Updating datacenterInfo");
+                	logger.info("Updating datacenterInfo");
                     ((AmazonInfo) this.getDataCenterInfo()).setMetadata(newInfo.getMetadata());
                 }
             }
@@ -48,6 +50,7 @@ public class EurekaApplication {
             public String getHostname() {
                 AmazonInfo info = getAmazonInfo();
                 final String publicHostname = info.get(AmazonInfo.MetaDataKey.publicHostname);
+                logger.debug("Host name: " + publicHostname);
                 return this.isPreferIpAddress() ?
                         info.get(AmazonInfo.MetaDataKey.localIpv4) :
                         publicHostname == null ?
@@ -60,10 +63,28 @@ public class EurekaApplication {
             }
 
             @Override
+            public int getNonSecurePort() {
+                return managementPort;
+            }
+
+            @Override
             public String getHomePageUrl() {
                 return super.getHomePageUrl();
             }
-           
+
+            @Override
+            public String getStatusPageUrl() {
+                String scheme = getSecurePortEnabled() ? "https" : "http";
+                return scheme + "://" + getHostname() + ":"
+                        + managementPort + getStatusPageUrlPath();
+            }
+
+            @Override
+            public String getHealthCheckUrl() {
+                String scheme = getSecurePortEnabled() ? "https" : "http";
+                return scheme + "://" + getHostname() + ":"
+                        + managementPort + getHealthCheckUrlPath();
+            }
         };
 
         AmazonInfo info = AmazonInfo.Builder.newBuilder().autoBuild("cloudconfig");
