@@ -19,4 +19,4 @@ eureka:
     leaseRenewalIntervalInSeconds: 10
     instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
   
-  datacenter: cloud 
+  datacenter: cloud
