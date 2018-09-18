@@ -3,4 +3,4 @@ spring:
     name: order-composite-service
   logging:
     level:
-      composite.order: DEBUG	
+      composite.order: DEBUG
