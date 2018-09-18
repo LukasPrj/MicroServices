@@ -1,34 +1,3 @@
 spring:
   application:
     name: discovery-service
-
-server:
-  port: 9091
-
-eureka:
-  environmnent: aws
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    region: us-east-2
-    eurekaServerPort: 9091
-    useDnsForFetchingServiceUrls: true
-    eurekaServerDNSName: prod.microservices.com
-    eurekaServerURLContext: eureka
-    preferSameZone: false
-    availabilityZones:
-      us-east-2: us-east-2a, us-east-2b
-      
-  server:
-    region: us-east-2
-  datacenter: cloud
-  awsAccessId: AKIAIGBXOPH3Z7AWPRZA
-  awsSecretKey: 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
-  us-east-2:
-      availabilityZones: us-east-2a, us-east-2b
-      
-  instance:
-    preferIpAddress: false
-    leaseRenewalIntervalInSeconds: 10
-    instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
-    

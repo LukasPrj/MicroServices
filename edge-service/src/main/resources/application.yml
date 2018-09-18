@@ -1,3 +1,6 @@
+server:
+  port: 0
+
 info:
   component: Zuul Server
 
@@ -16,8 +19,19 @@ zuul:
       path: /ordercomposite/**
 #      stripPrefix: false
 
-server:
-  port: 9092
+eureka:
+  environmnent: aws
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    region: us-east-2
+    eurekaServerPort: 9091
+    useDnsForFetchingServiceUrls: true
+    eurekaServerDNSName: prod.microservices.com
+    eurekaServerURLContext: eureka
+    preferSameZone: false
+    availabilityZones:
+      us-east-2: us-east-2a, us-east-2b
 
 logging:
   level:
