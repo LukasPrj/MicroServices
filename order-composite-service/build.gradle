@@ -42,7 +42,7 @@ dependencies {
     compile("org.springframework.cloud:spring-cloud-starter-bus-amqp")
     compile("org.springframework.cloud:spring-cloud-netflix-hystrix-amqp")
     compile("org.springframework.cloud:spring-cloud-starter-eureka")
-    compile("org.springframework.cloud:spting-cloud-starter-ribbon")
+    compile("org.springframework.cloud:spring-cloud-starter-ribbon")
     testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
 }
 

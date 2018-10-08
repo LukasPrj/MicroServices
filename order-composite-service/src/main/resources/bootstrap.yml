@@ -14,3 +14,46 @@ eureka:
     leaseRenewalIntervalInSeconds: 10
   instance:
     preferIpAddress: true
+
+hystrix:
+  command:
+    placeOrderWarehouse:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread: 
+            timeoutInMilliseconds: 2000
+      circuitBreaker:
+        sleepWindowInMilliseconds: 30000
+        requestVolumeThreshold: 20
+        errorThresholdPercentage: 50   
+       
+    placeOrderShipment:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread: 
+            timeoutInMilliseconds: 2000
+      circuitBreaker:
+        sleepWindowInMilliseconds: 30000
+        requestVolumeThreshold: 20
+        errorThresholdPercentage: 50
+  threadpool:
+    default:
+      coreSize: 10
+      queueSizeRejectionThreshold: 5
+
+
+shipping-service:
+  ribbon:
+    eureka:
+      enabled: true
+      EnableZoneAffinity: true
+      NFLoadBalancerRuleClassName: com.netflix.loadbalancer.AvailabilityFilteringRule
+      
+warehouse-service:
+  ribbon:
+    eureka:
+      enabled: true
+      EnableZoneAffinity: true
+      NFLoadBalancerRuleClassName: com.netflix.loadbalancer.AvailabilityFilteringRule                
