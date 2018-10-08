@@ -9,7 +9,10 @@ import org.springframework.cloud.netflix.eureka.EurekaInstanceConfigBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 import com.netflix.appinfo.AmazonInfo;
-
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableDiscoveryClient
@@ -32,4 +35,12 @@ public class OrderCompositeServiceApplication {
 	    return config;
 	}
 
+	@Configuration
+	public class Config {
+		@LoadBalanced
+		@Bean
+		RestTemplate restTemplate(){
+			return new RestTemplate();
+		}
+	}
 }

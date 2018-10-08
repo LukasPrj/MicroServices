@@ -16,4 +16,49 @@ eureka:
   instance:
     preferIpAddress: true
     leaseRenewalIntervalInSeconds: 10
-    instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}} 
+    instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
+
+
+hystrix:
+  command:
+    placeOrderWarehouse:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread: 
+            timeoutInMilliseconds: 2000
+      circuitBreaker:
+        sleepWindowInMilliseconds: 30000
+        requestVolumeThreshold: 20
+        errorThresholdPercentage: 50   
+       
+    placeOrderShipment:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread: 
+            timeoutInMilliseconds: 2000
+      circuitBreaker:
+        sleepWindowInMilliseconds: 30000
+        requestVolumeThreshold: 20
+        errorThresholdPercentage: 50
+  threadpool:
+    default:
+      coreSize: 10
+      queueSizeRejectionThreshold: 5
+
+
+shipping-service:
+  ribbon:
+    eureka:
+      enabled: true
+      EnableZoneAffinity: true
+      NFLoadBalancerRuleClassName: com.netflix.loadbalancer.AvailabilityFilteringRule
+      
+warehouse-service:
+  ribbon:
+    eureka:
+      enabled: true
+      EnableZoneAffinity: true
+      NFLoadBalancerRuleClassName: com.netflix.loadbalancer.AvailabilityFilteringRule                
+>>>>>>> 731962c... Ribbon & Hystrix configuration for the order composite service

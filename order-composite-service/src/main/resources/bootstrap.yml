@@ -4,3 +4,4 @@ spring:
   logging:
     level:
       composite.order: DEBUG
+
